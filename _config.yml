@@ -1,6 +1,6 @@
 name: bangunkarya
 markdown: kramdown
 pygments: true
-permalink: /blog/:year/:month/:day/:title.html
+permalink: /:year/:month/:day/:title.html
 excerpt_separator: <!--more-->
 paginate: 1
