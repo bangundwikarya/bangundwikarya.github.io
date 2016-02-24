@@ -9,6 +9,7 @@
     <div id="info-container">
       <h2 id="title">{{ page.title }}</h2>
       <span id="date">{{ page.date | date_to_string }}</span>
+      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
     </div>
   </div>
 
