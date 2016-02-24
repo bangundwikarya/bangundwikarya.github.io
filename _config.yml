@@ -2,5 +2,3 @@ name: bangunkarya
 markdown: kramdown
 pygments: true
 permalink: /:year/:month/:day/:title.html
-excerpt_separator: <!--more-->
-paginate: 1
