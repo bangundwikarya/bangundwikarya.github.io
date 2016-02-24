@@ -3,23 +3,17 @@
     <img src="http://bangundwikarya.github.io/images/sidebar-button.png">
   </div>
   <div id="post-info">
-    <div id="cover-photo-container">
-      <img id="cover-photo" src="http://bangundwikarya.github.io/images/cover.png">
-    </div>
     <div id="info-container">
       <h2 id="title">{{ page.title }}</h2>
       <span id="date">{{ page.date | date_to_string }}</span>
-      {{ post.excerpt | remove: '<p>' | remove: '</p>' }}
     </div>
   </div>
-
   <div class="post">
     {{ content }}
   </div>
   <div class="colophon">
     <p>
       <span id="pub-date">{{ page.date | date_to_string }}</span> <span class="separator">&bull;</span>
-      <span id="social">Twitter: <a href="https://twitter.com/Dipotarget" rel="nofollow" target="_blank">Twitter</a>!</span>
     </p>
   </div>
 </div>
