@@ -42,7 +42,7 @@ a:hover {color: #555;border: none;}
 .content {padding-left: 2.125em;}
 .header {text-align: center;padding-top: 2.5em;font-size: 1.1em;}
 .post-link {margin-bottom: 0.75em;}
-.post-title {font-weight: 600;font-size: 1.25em;text-transform: uppercase;}
+.post-title {font-weight: 600;}
 .post-date {color: #8a8a8a;font-family: Monaco, "Courier New", monospace;font-weight: 600;font-size: 0.65em;display: block;text-transform: uppercase;}
 #sidebar-button {height: intrinsic;cursor: pointer;display: none;padding: 15px 5px 0px 0px;margin-bottom: 10px;border-bottom: 1px solid #e7e7e7;}
 #sidebar-button:active, #sidebar-button:hover {opacity: 0.7;}
