@@ -49,3 +49,6 @@ a:hover {color: #555;border: none;}
 /* Colophon */
 .colophon {margin-top: 1.5em;margin-bottom: 1.45em;border-top: 1px dotted #e7e7e7;}
 .colophon p {margin-top: 1.25em;font-size: 0.95em;color: #777;}
+
+ul.posts {margin: 20px auto 40px;font-size: 1.5em;}
+ul.posts li {list-style: none;}
