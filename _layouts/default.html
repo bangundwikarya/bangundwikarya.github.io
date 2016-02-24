@@ -29,13 +29,18 @@
           <ul class="posts-list">
             {% for post in site.posts %}
               <li class="post-link">
-                <a class="post-title" href="{{ post.url }}">
-                  <span class="post-date">{{ post.date | date_to_string }}</span>
-                  {{ post.title }}
-                </a>
-              </li>
+                <h2><a class="post-title" href="{{ post.url }}"><span class="post-date">{{ post.date | date_to_string }}</span>{{ post.title }}</a></h2>{% if post.excerpt %}{{ post.excerpt }}{% endif %}</li>
             {% endfor %}
           </ul>
+	  <!-- Pagination links -->
+	  <div class="pagination">
+		{% if paginator.previous_page %}
+		<a href="{{ site.url }}{{ paginator.previous_page_path }}" class="previous button__outline">Pos Anyar</a>  
+		{% endif %} 
+		{% if paginator.next_page %}
+			<a href="{{ site.url }}{{ paginator.next_page_path }}" class="next button__outline">Pos Lawas</a>
+		{% endif %}
+	  </div>
         </div>
         <div class="footer">
           <span id="footer-links">
