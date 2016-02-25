@@ -5,7 +5,12 @@
   <div id="post-info">
     <div id="info-container">
       <h2 id="title">{{ page.title }}</h2>
-      <span id="date">{{ page.date | date_to_string }}</span>
+      {% if page.title %}
+    <a href="{{ root_url }}{{ page.url }}">{{ page.title }}</a>
+{% endif %}
+{% if post.title %}
+    <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+{% endif %}
     </div>
   </div>
   <div class="post">
@@ -13,7 +18,7 @@
   </div>
   <div class="colophon">
     <p>
-      <span id="pub-date">{{ page.date | date_to_string }}</span> <span class="separator">&bull;</span>
+      <span id="pub-date">{{ page.date | date_to_string }}</span>
     </p>
   </div>
 </div>
